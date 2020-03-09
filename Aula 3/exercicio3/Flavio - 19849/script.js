@@ -20,11 +20,10 @@ function setColor() {
     }
 }
 
-function getValue() {
+function getValue(val) {
     let value = prompt("Novo valor da linha selecionada?:");
     if (value != null && value != "") {
-        let element = document.getElementById("change");
-        element.textContent = value;
-        element.style.backgroundColor = "#99e599";
+        val.textContent = value;
+        val.style.backgroundColor = "#99e599";
     }
 }
